@@ -8,19 +8,19 @@ The application is written with nodejs, his stdlib modules and the `blessed` mod
 
 ### Server
 
-docker build -t adotmob-server server/.
+`docker build -t adotmob-server server/.`
 
 ### Listener
 
-docker build -t adotmob-listener listener/.
+`docker build -t adotmob-listener listener/.`
 
 ## Run
 
 First be sure to open two separate terminal windows so you can observe the realtime mirroring effect on the server while you type text on the listener's tty.
 
-docker run -it -v /tmp:/tmp adotmob-server
+`docker run -it -v /tmp:/tmp adotmob-server`
 
-docker run -it -v /tmp:/tmp adotmob-listener
+`docker run -it -v /tmp:/tmp adotmob-listener`
 
 ## Use case
 
